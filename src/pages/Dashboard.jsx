@@ -154,9 +154,6 @@ const Dashboard = () => {
             </Dropdown.Item>
           </Dropdown.Menu>
         </Dropdown>
-        {/* <button>
-          <img src={require("./Images/Logout.jpg")} />
-        </button> */}
       </div>
 
       <LoadScript googleMapsApiKey="AIzaSyDElD1sPdm75PkUnqw30WL6zg5RG3d_pVc">
@@ -199,23 +196,24 @@ const Dashboard = () => {
               clickable={true}
               onCloseClick={() => setSelected({})}
             >
-              <div className="element-div">
-                <h className="element-h">
-                  <h4>{selected.name}</h4>
-                  <h5>{selected.country}</h5>
-                </h>
-                <h className="element-space">
-                  <h3>WIND PROBABILITY</h3>
-                  <h3>{selected.probability}</h3>
-                </h>
-                <h className="element-space">
-                  <h3>LATITUDE</h3>
-                  <h3>{selected.lat} N</h3>
-                </h>
-                <h className="element-space">
-                  <h3>LONGITUDE</h3>
-                  <h3>{selected.long}</h3>
-                </h>
+              <div className="div-container ">
+                <h4 className="name-h4">{selected.name}</h4>
+                <h5 className="name-h5">{selected.country}</h5>
+
+                <br />
+                <div>
+                  <h6 className="name-of-class-element">Wind probability </h6>
+                  <h6 className="position-h6">{selected.probability}%</h6>
+
+                  <h6 className="name-of-class-element">Latitude</h6>
+                  <h6 className="position-h6">{selected.lat}° N</h6>
+
+                  <h6 className="name-of-class-element">Longitude</h6>
+                  <h6 className="position-h6">{selected.long}° N</h6>
+
+                  <h6 className="name-of-class-element">When to go</h6>
+                  <h6 className="position-h6">{selected.month}</h6>
+                </div>
               </div>
             </InfoWindow>
           )}

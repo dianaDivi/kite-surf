@@ -26,30 +26,36 @@ button {
   font-weight: normal;
   font-style: normal;
   font-variant: normal;
+ 
 }
 
-.element-div {
-  color: black;
-  box-shadow: 2px 2px 20px 23px #7fecad;
+.div-container {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
 }
 
-.element-h {
-  font-family: cursive, sans-serif;
-  justify-content: normal;
+.name-h4{
+    font-style: Helvetica, Arial, sans-serify;
 }
 
-.element-space {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  font-family: "Courier New", Courier, monospace;
-  font-size: 10px;
-  margin-top: 10px;
+.name-h5{
+    font-style: italic;
+    font-size: 15px;
+    margin-top: -12px;
+    color:rgba(34, 33, 33, 0.822);
 }
 
+
+.name-of-class-element{
+    color:rgba(0, 0, 0, 0.548);
+    margin-top: 5px;
+    font-family:oblique 40deg;
+    text-Transform: "uppercase";
+}
+
+.position-h6{
+    margin-top: -10px;
+}
 .location-div {
 
   margin: 50px 200px;
