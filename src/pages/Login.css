@@ -1,0 +1,39 @@
+
+
+.login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+
+}
+
+
+button {
+    background-color: cornflowerblue;
+    color: cornsilk;
+    padding: 10px 40px ;
+    border-color: unset;
+    margin-top: 15px;
+}
+
+.name-title-style{
+font-family: "Comic Sans MS", cursive, sans-serif;
+font-size: 70px;
+letter-spacing: 2px;
+word-spacing: 2px;
+color: #000000;
+font-weight: normal;
+font-style: normal;
+font-variant: normal;
+
+}
+
+.input-container{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    margin-bottom: 15px;
+    
+}
